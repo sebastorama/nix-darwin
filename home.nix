@@ -65,6 +65,9 @@
     ".config/kitty/kitty.conf".source =
       config.lib.file.mkOutOfStoreSymlink "${config.xdg.configHome}/nix-darwin/dotfiles/kitty.conf";
 
+    ".config/nvim/".source =
+      config.lib.file.mkOutOfStoreSymlink "${config.xdg.configHome}/nix-darwin/dotfiles/nvim";
+
     ".npmrc".source = dotfiles/npmrc;
 
     # # You can also set the file content immediately.

@@ -17,7 +17,11 @@
       "jetbrains-toolbox"
       "karabiner-elements"
       "kitty"
+      "microsoft-office"
       "parallels"
+      "spotify"
+      "telegram"
+      "textual"
       "whatsapp"
     ];
     onActivation.autoUpdate = true;
