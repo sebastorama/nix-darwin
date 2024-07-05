@@ -27,18 +27,18 @@
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;
   };
-  
+
   services.nix-daemon.enable = true;
   # nix.package = pkgs.nix;
-  
+
   nix.settings.experimental-features = "nix-command flakes";
-  
+
   # Create /etc/zshrc that loads the nix-darwin environment.
   programs.zsh.enable = true;  # default shell on catalina
-  
+
   # Set Git commit hash for darwin-version.
   system.configurationRevision = self.rev or self.dirtyRev or null;
-  
+
   # Used for backwards compatibility, please read the changelog before changing.
   # $ darwin-rebuild changelog
   system.stateVersion = 4;
@@ -58,7 +58,7 @@
   };
 
   security.pam.enableSudoTouchIdAuth = true;
-  
+
   # The platform the configuration will be used on.
   nixpkgs.hostPlatform = system;
 }
