@@ -8,22 +8,47 @@
 
   homebrew = {
     enable = true;
+
+    taps = [
+      "d12frosted/emacs-plus"
+    ];
+
     casks = [
       "1password"
       "alfred"
       "discord"
+      "docker"
       "dropbox"
       "google-chrome"
       "jetbrains-toolbox"
       "karabiner-elements"
       "kitty"
       "microsoft-office"
+      "notion"
+      "obs"
+      "obs-backgroundremoval"
+      "obsidian"
       "parallels"
       "spotify"
       "telegram"
       "textual"
+      "visual-studio-code"
       "whatsapp"
+      "wifiman"
     ];
+
+    brews = [
+      "mas"
+      "emacs-plus@30"
+      "findutils"
+    ];
+
+    masApps = {
+      "Goodnotes 6" = 1444383602;
+      "TextSniper" = 1528890965;
+      "TickTick:To-Do List, Calendar" = 966085870;
+    };
+
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;
   };
@@ -55,6 +80,7 @@
     ApplePressAndHoldEnabled = false;
     KeyRepeat = 2;
     InitialKeyRepeat = 15;
+    NSWindowShouldDragOnGesture = true;
   };
 
   security.pam.enableSudoTouchIdAuth = true;
