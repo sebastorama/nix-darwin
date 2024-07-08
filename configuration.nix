@@ -3,6 +3,7 @@
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
+    cmake
     vim
   ];
 
@@ -38,12 +39,12 @@
     ];
 
     brews = [
-      "mas"
-      "emacs-plus@30"
+      "emacs-plus"
       "findutils"
     ];
 
     masApps = {
+      "LocalSend" = 1661733229;
       "Goodnotes 6" = 1444383602;
       "TextSniper" = 1528890965;
       "TickTick:To-Do List, Calendar" = 966085870;
@@ -73,14 +74,31 @@
   ];
 
   system.defaults.dock.autohide = true;
-  system.keyboard.enableKeyMapping = true;
-  system.keyboard.remapCapsLockToControl = true;
+
+  system.defaults.finder = {
+    AppleShowAllExtensions = true;
+    ShowStatusBar = true;
+    ShowPathbar = true;
+    FXPreferredViewStyle = "Nlsv";
+  };
+
+  system.defaults.trackpad = {
+    TrackpadThreeFingerDrag = false;
+    Dragging = true;
+    Clicking = true;
+  };
 
   system.defaults.NSGlobalDomain = {
+    "com.apple.keyboard.fnState" = true;
     ApplePressAndHoldEnabled = false;
-    KeyRepeat = 2;
     InitialKeyRepeat = 15;
+    KeyRepeat = 2;
     NSWindowShouldDragOnGesture = true;
+  };
+
+  system.keyboard = {
+    enableKeyMapping = true;
+    remapCapsLockToControl = true;
   };
 
   security.pam.enableSudoTouchIdAuth = true;
