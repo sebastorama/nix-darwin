@@ -44,8 +44,9 @@
     ];
 
     masApps = {
-      "LocalSend" = 1661733229;
       "Goodnotes 6" = 1444383602;
+      "LocalSend" = 1661733229;
+      "PDF Squeezer 4" = 1502111349;
       "TextSniper" = 1528890965;
       "TickTick:To-Do List, Calendar" = 966085870;
     };
@@ -73,7 +74,10 @@
    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];
 
-  system.defaults.dock.autohide = true;
+  system.defaults.dock = {
+    autohide = true;
+    show-recents = false;
+  };
 
   system.defaults.finder = {
     AppleShowAllExtensions = true;
@@ -83,7 +87,7 @@
   };
 
   system.defaults.trackpad = {
-    TrackpadThreeFingerDrag = false;
+    TrackpadThreeFingerDrag = true;
     Dragging = true;
     Clicking = true;
   };
@@ -109,7 +113,6 @@
       auth       sufficient     pam_tid.so
     '';
   };
-
 
   # The platform the configuration will be used on.
   nixpkgs.hostPlatform = system;

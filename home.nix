@@ -179,7 +179,7 @@
     enable = true;
     oh-my-zsh = {
       enable = true;
-      theme = "alanpeabody";
+      theme = "bureau";
       plugins = [
         "git"
         "npm"
