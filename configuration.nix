@@ -87,7 +87,7 @@
   };
 
   system.defaults.trackpad = {
-    TrackpadThreeFingerDrag = true;
+    TrackpadThreeFingerDrag = false;
     Dragging = true;
     Clicking = true;
   };
