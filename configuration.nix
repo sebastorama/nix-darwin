@@ -21,6 +21,7 @@
       "docker"
       "dropbox"
       "google-chrome"
+      "google-earth-pro"
       "jetbrains-toolbox"
       "karabiner-elements"
       "kitty"
