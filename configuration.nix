@@ -34,6 +34,7 @@
       "spotify"
       "telegram"
       "textual"
+      "transcribe"
       "visual-studio-code"
       "whatsapp"
       "wifiman"
