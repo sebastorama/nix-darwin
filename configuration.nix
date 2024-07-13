@@ -22,6 +22,7 @@
       "dropbox"
       "google-chrome"
       "google-earth-pro"
+      "iina"
       "jetbrains-toolbox"
       "karabiner-elements"
       "kitty"
