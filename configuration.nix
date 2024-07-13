@@ -107,6 +107,8 @@
     remapCapsLockToControl = true;
   };
 
+  networking.hostName = "14m3";
+
   security.pam.enableSudoTouchIdAuth = true;
   environment = {
     etc."pam.d/sudo_local".text = ''

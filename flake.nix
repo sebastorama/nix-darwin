@@ -28,8 +28,8 @@
   in
   {
     # Build darwin flake using:
-    # $ darwin-rebuild build --flake .#14m1
-    darwinConfigurations."14m1" = nix-darwin.lib.darwinSystem {
+    # $ darwin-rebuild build --flake .#14m3
+    darwinConfigurations."14m3" = nix-darwin.lib.darwinSystem {
       modules = [
         ./configuration.nix
         home-manager.darwinModules.home-manager {
@@ -50,6 +50,6 @@
     };
 
     # Expose the package set, including overlays, for convenience.
-    darwinPackages = self.darwinConfigurations."14m1".pkgs;
+    darwinPackages = self.darwinConfigurations."14m3".pkgs;
   };
 }
