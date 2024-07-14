@@ -38,6 +38,7 @@
     ripgrep
     ruby
     stdenv
+    stylua
     tldr
     tmux
     # # It is sometimes useful to fine-tune packages, for example, by applying

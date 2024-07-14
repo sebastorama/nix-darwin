@@ -20,6 +20,7 @@
       "discord"
       "docker"
       "dropbox"
+      "focusrite-control"
       "google-chrome"
       "google-earth-pro"
       "iina"
@@ -90,8 +91,8 @@
   };
 
   system.defaults.trackpad = {
-    TrackpadThreeFingerDrag = false;
-    Dragging = true;
+    TrackpadThreeFingerDrag = true;
+    Dragging = false;
     Clicking = true;
   };
 
