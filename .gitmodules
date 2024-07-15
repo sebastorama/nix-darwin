@@ -1,3 +1,6 @@
 [submodule "dotfiles/nvim"]
 	path = dotfiles/nvim
 	url = git@github.com:sebastorama/nvim
+[submodule "dotfiles/doom"]
+	path = dotfiles/doom
+	url = git@github.com:sebastorama/doom.d

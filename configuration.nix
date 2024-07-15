@@ -34,6 +34,7 @@
       "obsidian"
       "parallels"
       "spotify"
+      "steam"
       "telegram"
       "textual"
       "transcribe"
@@ -88,6 +89,7 @@
     ShowStatusBar = true;
     ShowPathbar = true;
     FXPreferredViewStyle = "Nlsv";
+    FXDefaultSearchScope = "SCcf";
   };
 
   system.defaults.trackpad = {
