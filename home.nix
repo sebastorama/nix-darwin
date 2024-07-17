@@ -180,7 +180,7 @@
     enable = true;
     oh-my-zsh = {
       enable = true;
-      theme = "bureau";
+      theme = "fino";
       plugins = [
         "git"
         "npm"
