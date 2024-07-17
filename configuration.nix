@@ -83,6 +83,7 @@
   system.defaults.dock = {
     autohide = true;
     show-recents = false;
+    appswitcher-all-displays = true;
   };
 
   system.defaults.finder = {
