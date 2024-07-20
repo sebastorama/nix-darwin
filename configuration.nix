@@ -50,6 +50,7 @@
     ];
 
     masApps = {
+      "Logic Pro" = 634148309;
       "Goodnotes 6" = 1444383602;
       "LocalSend" = 1661733229;
       "PDF Squeezer 4" = 1502111349;
