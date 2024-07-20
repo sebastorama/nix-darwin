@@ -50,12 +50,14 @@
     ];
 
     masApps = {
-      "Logic Pro" = 634148309;
+      "1Password for Safari" = 1569813296;
       "Goodnotes 6" = 1444383602;
       "LocalSend" = 1661733229;
+      "Logic Pro" = 634148309;
       "PDF Squeezer 4" = 1502111349;
       "TextSniper" = 1528890965;
       "TickTick:To-Do List, Calendar" = 966085870;
+      "Vimari" = 1480933944;
     };
 
     onActivation.autoUpdate = true;
