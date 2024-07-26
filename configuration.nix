@@ -15,10 +15,11 @@
     ];
 
     casks = [
-      "1password"
       "adobe-acrobat-pro"
       "alfred"
       "arc"
+      "balenaetcher"
+      "clickup"
       "discord"
       "docker"
       "dropbox"
@@ -30,6 +31,7 @@
       "karabiner-elements"
       "kitty"
       "microsoft-office"
+      "morgen"
       "notion"
       "obs"
       "obs-backgroundremoval"
@@ -40,6 +42,7 @@
       "steam"
       "telegram"
       "textual"
+      "todoist"
       "transcribe"
       "visual-studio-code"
       "whatsapp"

@@ -140,7 +140,7 @@
     baseIndex = 1;
     disableConfirmationPrompt = true;
     mouse = true;
-    newSession = true;
+    newSession = false;
     keyMode = "vi";
     extraConfig = ''
       set -g message-style bg='#222436'
@@ -157,6 +157,10 @@
       bind-key -T copy-mode-vi v send-keys -X begin-selection
       # Use y to yank current selection
       bind-key -T copy-mode-vi y send-keys -X copy-selection-and-cancel
+
+      bind c new-window -c "#{pane_current_path}"
+      bind '"' split-window -c "#{pane_current_path}"
+      bind % split-window -h -c "#{pane_current_path}"
 
       bind-key -n C-M-PageUp swap-window -t -1\; select-window -t -1
       bind-key -n C-M-PageDown swap-window -t +1\; select-window -t +1
