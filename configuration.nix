@@ -15,6 +15,7 @@
     ];
 
     casks = [
+      "1password"
       "adobe-acrobat-pro"
       "alfred"
       "arc"
