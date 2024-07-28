@@ -40,6 +40,7 @@
       "parallels"
       "spotify"
       "steam"
+      "teamviewer"
       "telegram"
       "textual"
       "todoist"
