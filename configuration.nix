@@ -28,6 +28,7 @@
       "google-chrome"
       "google-earth-pro"
       "iina"
+      "iterm2"
       "jetbrains-toolbox"
       "karabiner-elements"
       "kitty"
