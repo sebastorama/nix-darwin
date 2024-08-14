@@ -59,6 +59,7 @@
 
     masApps = {
       "1Password for Safari" = 1569813296;
+      "Amazon Kindle" = 302584613;
       "Goodnotes 6" = 1444383602;
       "LocalSend" = 1661733229;
       "Logic Pro" = 634148309;
