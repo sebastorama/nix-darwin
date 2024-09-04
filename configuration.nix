@@ -115,6 +115,7 @@
   system.defaults.NSGlobalDomain = {
     "com.apple.keyboard.fnState" = true;
     ApplePressAndHoldEnabled = false;
+    AppleShowScrollBars = "Always";
     InitialKeyRepeat = 15;
     KeyRepeat = 2;
     NSWindowShouldDragOnGesture = true;
