@@ -32,6 +32,7 @@
       "jetbrains-toolbox"
       "karabiner-elements"
       "kitty"
+      "logitech-g-hub"
       "microsoft-office"
       "morgen"
       "notion"
