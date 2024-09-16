@@ -94,7 +94,7 @@
   ];
 
   system.defaults.dock = {
-    autohide = false;
+    autohide = true;
     show-recents = false;
     appswitcher-all-displays = true;
   };
