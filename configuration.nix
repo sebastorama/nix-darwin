@@ -43,6 +43,7 @@
       "parallels"
       "spotify"
       "steam"
+      "steelseries-gg"
       "teamviewer"
       "telegram"
       "textual"
