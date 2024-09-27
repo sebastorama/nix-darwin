@@ -21,6 +21,7 @@
       "arc"
       "balenaetcher"
       "clickup"
+      "cursor"
       "discord"
       "docker"
       "dropbox"

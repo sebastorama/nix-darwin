@@ -20,6 +20,7 @@
   # environment.
 
   home.packages = with pkgs; [
+    aider-chat
     bc
     btop
     cargo
