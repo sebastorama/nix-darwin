@@ -16,6 +16,7 @@
 
     casks = [
       "1password"
+      "1password-cli"
       "adobe-acrobat-pro"
       "alfred"
       "arc"

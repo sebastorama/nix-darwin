@@ -219,6 +219,10 @@
         sha256 = "tQqIlkgIWPEdomofPlmWNEz/oNFA1qasILk4R5RWobY=";
       };
     }];
+
+    initExtra = ''
+      source ~/.secrets
+    '';
   };
 
   pam.sessionVariables = config.home.sessionVariables // {
