@@ -33,6 +33,7 @@
     neovim
     nil
     nodejs_22
+    pgformatter
     pipx
     postgresql_16
     python3

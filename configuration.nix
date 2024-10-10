@@ -41,6 +41,7 @@
       "obs"
       "obs-backgroundremoval"
       "obsidian"
+      "ollama"
       "orion"
       "parallels"
       "spotify"
