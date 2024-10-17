@@ -176,6 +176,9 @@
       bind-key -n F3 choose-window
       bind-key ! break-pane -d -n _hidden_pane
       bind-key @ join-pane -s $.1
+
+      set -gu default-command
+      set -g default-shell "$SHELL"
     '';
   };
 
