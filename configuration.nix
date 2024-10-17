@@ -23,6 +23,7 @@
       "balenaetcher"
       "clickup"
       "cursor"
+      "devpod"
       "discord"
       "docker"
       "dropbox"

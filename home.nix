@@ -23,6 +23,7 @@
     aider-chat
     bc
     btop
+    devcontainer
     cargo
     fd
     freerdp3
