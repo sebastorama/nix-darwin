@@ -34,6 +34,7 @@
       "iterm2"
       "jetbrains-toolbox"
       "karabiner-elements"
+      "kdenlive"
       "kitty"
       "logitech-g-hub"
       "microsoft-office"

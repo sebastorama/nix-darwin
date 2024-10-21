@@ -31,6 +31,7 @@
     gcc
     jq
     lsd
+    mtr
     neovim
     nil
     nodejs_22
