@@ -57,6 +57,7 @@
       "visual-studio-code"
       "whatsapp"
       "wifiman"
+      "zed"
     ];
 
     brews = [
