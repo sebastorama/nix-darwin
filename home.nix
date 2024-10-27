@@ -165,6 +165,7 @@
       bind c new-window -c "#{pane_current_path}"
       bind '"' split-window -c "#{pane_current_path}"
       bind % split-window -h -c "#{pane_current_path}"
+      bind-key C-u run-shell -b "tmux capture-pane -J -p | grep -oE '(https?):\/\/[^ ]*' | fzf-tmux -d20 --multi --bind alt-a:select-all,alt-d:deselect-all | xargs open"
 
       bind-key -n C-M-PageUp swap-window -t -1\; select-window -t -1
       bind-key -n C-M-PageDown swap-window -t +1\; select-window -t +1
