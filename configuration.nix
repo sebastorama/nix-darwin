@@ -19,6 +19,7 @@
       "1password-cli"
       "adobe-acrobat-pro"
       "alfred"
+      "android-studio"
       "arc"
       "balenaetcher"
       "clickup"
@@ -73,7 +74,6 @@
       "Logic Pro" = 634148309;
       "PDF Squeezer 4" = 1502111349;
       "TextSniper" = 1528890965;
-      "TickTick:To-Do List, Calendar" = 966085870;
       "Vimari" = 1480933944;
     };
 
