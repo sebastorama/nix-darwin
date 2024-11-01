@@ -38,8 +38,10 @@
       "kdenlive"
       "kitty"
       "logitech-g-hub"
+      "logi-options+"
       "microsoft-office"
       "morgen"
+      "ngrok"
       "notion"
       "obs"
       "obs-backgroundremoval"
@@ -47,7 +49,6 @@
       "ollama"
       "orion"
       "parallels"
-      "spotify"
       "steam"
       "steelseries-gg"
       "teamviewer"
@@ -64,6 +65,8 @@
     brews = [
       "emacs-plus"
       "findutils"
+      "graphviz"
+      "sevenzip"
     ];
 
     masApps = {
@@ -97,7 +100,7 @@
   system.stateVersion = 4;
 
   fonts.packages = with pkgs; [
-   (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+   (nerdfonts.override { fonts = [ "JetBrainsMono" "Meslo" ]; })
   ];
 
   system.defaults.dock = {
