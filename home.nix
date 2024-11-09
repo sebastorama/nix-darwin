@@ -171,9 +171,9 @@
       bind-key -n C-M-PageDown swap-window -t +1\; select-window -t +1
       bind-key -n C-PageUp previous-window
       bind-key -n C-PageDown next-window
-      bind-key -n M-9 previous-window
+      bind-key -n M-0  previous-window
       bind-key -n S-F1 swap-window -t -1\; select-window -t -1
-      bind-key -n M-0 next-window
+      bind-key -n M-- next-window
       bind-key -n S-F2 swap-window -t +1\; select-window -t +1
       bind-key -n F3 choose-window
       bind-key ! break-pane -d -n _hidden_pane

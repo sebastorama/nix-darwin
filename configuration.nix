@@ -4,6 +4,7 @@
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
     cmake
+    goku
     vim
   ];
 
@@ -49,6 +50,7 @@
       "ollama"
       "orion"
       "parallels"
+      "qgis"
       "steam"
       "steelseries-gg"
       "teamviewer"
@@ -66,6 +68,7 @@
       "emacs-plus"
       "findutils"
       "graphviz"
+      "haskell-stack"
       "sevenzip"
     ];
 
