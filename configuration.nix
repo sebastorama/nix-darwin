@@ -77,6 +77,7 @@
       "Amazon Kindle" = 302584613;
       "ColorSlurp" = 1287239339;
       "Goodnotes 6" = 1444383602;
+      "HazeOver Distraction Dimmer" = 430798174;
       "LocalSend" = 1661733229;
       "Logic Pro" = 634148309;
       "PDF Squeezer 4" = 1502111349;
