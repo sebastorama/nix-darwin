@@ -41,6 +41,7 @@
       "logitech-g-hub"
       "logi-options+"
       "microsoft-office"
+      "mattermost"
       "morgen"
       "ngrok"
       "notion"
@@ -105,7 +106,8 @@
   system.stateVersion = 4;
 
   fonts.packages = with pkgs; [
-   (nerdfonts.override { fonts = [ "JetBrainsMono" "Meslo" ]; })
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.iosevka
   ];
 
   system.defaults.dock = {

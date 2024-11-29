@@ -20,6 +20,7 @@
   # environment.
 
   home.packages = with pkgs; [
+    act
     aider-chat
     bc
     btop
