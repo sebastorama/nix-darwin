@@ -106,8 +106,9 @@
   system.stateVersion = 4;
 
   fonts.packages = with pkgs; [
-    nerd-fonts.jetbrains-mono
     nerd-fonts.iosevka
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.symbols-only
   ];
 
   system.defaults.dock = {
