@@ -24,12 +24,14 @@
     aider-chat
     bc
     btop
-    devcontainer
     cargo
+    devcontainer
     fd
     freerdp3
     fzf
     gcc
+    gh
+    imagemagick
     jq
     lsd
     mtr
@@ -151,6 +153,7 @@
       set -g message-style bg='#222436'
       set -g status-style fg='#624C6F',bg='#222436'
       set -g window-status-current-style fg='#ff0000',bg='#222436'
+      set -g pane-border-status bottom
       set-window-option -g window-status-current-style fg=red
       set-option -g status-position top
 
@@ -168,8 +171,15 @@
       bind % split-window -h -c "#{pane_current_path}"
       bind-key C-u run-shell -b "tmux capture-pane -J -p | grep -oE '(https?):\/\/[^ ]*' | fzf-tmux -d20 --multi --bind alt-a:select-all,alt-d:deselect-all | xargs open"
 
+      bind-key -n C-M-l select-pane -R
+      bind-key -n C-M-h select-pane -L
+      bind-key -n C-M-5 split-window -h
+
+
       bind-key -n C-M-PageUp swap-window -t -1\; select-window -t -1
       bind-key -n C-M-PageDown swap-window -t +1\; select-window -t +1
+
+      bind-key C-Space select-pane -t .+\; resize-pane -Z
 
       bind-key -n C-PageUp previous-window
       bind-key -n C-PageDown next-window
