@@ -52,6 +52,7 @@
       "orion"
       "parallels"
       "qgis"
+      "raycast"
       "steam"
       "steelseries-gg"
       "teamviewer"
@@ -141,8 +142,7 @@
   };
 
   system.keyboard = {
-    enableKeyMapping = true;
-    remapCapsLockToControl = true;
+    enableKeyMapping = false;
   };
 
   networking.hostName = "14m3";
