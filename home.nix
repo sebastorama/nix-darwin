@@ -153,11 +153,13 @@
       set -g message-style bg='#222436'
       set -g status-style fg='#624C6F',bg='#222436'
       set -g window-status-current-style fg='#ff0000',bg='#222436'
-      set -g pane-border-status bottom
       set-window-option -g window-status-current-style fg=red
       set-option -g status-position top
 
       set -g default-terminal 'tmux-256color'
+      set -g window-style bg='#2C3047'
+      set -g window-active-style bg='#222436'
+
       set -as terminal-overrides ',*:Smulx=\E[4::%p1%dm'  # undercurl support
       set -as terminal-overrides ',*:Setulc=\E[58::2::%p1%{65536}%/%d::%p1%{256}%/%{255}%&%d::%p1%{255}%&%d%;m'  # underscore colours - needs tmux-3.0
 
