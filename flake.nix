@@ -17,10 +17,6 @@
   let
     system = "aarch64-darwin";
 
-    nixpkgsConfig = {
-      config = { allowUnfree = true; };
-    };
-
     pkgs = import nixpkgs {
       system = system;
       overlays = [inputs.neovim-nightly-overlay.overlays.default];
@@ -41,7 +37,7 @@
           home-manager.users.sebastorama = import ./home.nix;
         }
       ];
-      specialArgs = { 
+      specialArgs = {
         inherit inputs;
         system = system;
         self = self;
