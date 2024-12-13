@@ -31,6 +31,7 @@
     fzf
     gcc
     gh
+    gum
     imagemagick
     jq
     lsd
@@ -44,6 +45,7 @@
     python3
     ripgrep
     ruby
+    sesh
     stdenv
     stylua
     tldr
@@ -149,6 +151,7 @@
     mouse = true;
     newSession = false;
     keyMode = "vi";
+    plugins = with pkgs.tmuxPlugins; [ tokyo-night-tmux ];
     extraConfig = ''
       set -g message-style bg='#222436'
       set -g status-style fg='#624C6F',bg='#222436'
@@ -177,11 +180,19 @@
       bind-key -n C-M-h select-pane -L
       bind-key -n C-M-5 split-window -h
 
+      bind-key "t" display-popup -E -w 40% "sesh connect \"$(
+       sesh list -i | gum filter --limit 1 --no-sort --fuzzy --placeholder 'Pick a sesh' --height 50 --prompt='⚡'
+      )\""
 
       bind-key -n C-M-PageUp swap-window -t -1\; select-window -t -1
       bind-key -n C-M-PageDown swap-window -t +1\; select-window -t +1
 
       bind-key C-Space select-pane -t .+\; resize-pane -Z
+
+      bind-key 9 resize-pane -L 10
+      bind-key 0 resize-pane -R 10
+      bind-key F3 resize-pane -L 50
+      bind-key F4 resize-pane -R 50
 
       bind-key -n C-PageUp previous-window
       bind-key -n C-PageDown next-window
