@@ -209,10 +209,10 @@
       set -gu default-command
       set -g default-shell "$SHELL"
 
+      set -sg escape-time 10
+
       set -g @tokyo-night-tmux_theme storm
       set -g @tokyo-night-tmux_window_tidy_icons 0
-      set -g @tokyo-night-tmux_pane_id_style digital
-      set -g @tokyo-night-tmux_zoom_id_style digital
     '';
   };
 
