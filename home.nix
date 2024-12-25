@@ -209,7 +209,7 @@
       set -gu default-command
       set -g default-shell "$SHELL"
 
-      set -sg escape-time 10
+      set -sg escape-time 0
 
       set -g @tokyo-night-tmux_theme storm
       set -g @tokyo-night-tmux_window_tidy_icons 0

@@ -36,6 +36,7 @@
       "jetbrains-toolbox"
       "karabiner-elements"
       "kdenlive"
+      "keymapp"
       "kitty"
       "logitech-g-hub"
       "logi-options+"
