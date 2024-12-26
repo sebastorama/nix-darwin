@@ -145,6 +145,11 @@
    };
   };
 
+  programs.ssh = {
+    enable = true;
+    addKeysToAgent = "yes";
+  };
+
   programs.tmux = {
     enable = true;
     baseIndex = 1;
