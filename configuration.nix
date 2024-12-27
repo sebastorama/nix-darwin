@@ -146,6 +146,9 @@
 
   networking.hostName = "14m3";
 
+  security.sudo.extraConfig = ''
+    sebastorama ALL=(ALL) NOPASSWD: ALL
+  '';
   security.pam.enableSudoTouchIdAuth = true;
   environment = {
     etc."pam.d/sudo_local".text = ''
