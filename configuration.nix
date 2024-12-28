@@ -29,6 +29,7 @@
       "docker"
       "dropbox"
       "focusrite-control"
+      "ghostty"
       "google-chrome"
       "google-earth-pro"
       "iina"

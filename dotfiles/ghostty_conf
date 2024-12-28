@@ -1,0 +1,4 @@
+theme = tokyonight
+macos-option-as-alt = left
+window-padding-color = background
+font-size = 18

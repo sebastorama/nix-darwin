@@ -25,7 +25,7 @@
     bc
     btop
     cargo
-    devcontainer
+    # devcontainer
     fd
     freerdp3
     fzf
@@ -75,6 +75,9 @@
 
     ".config/kitty/kitty.conf".source =
       config.lib.file.mkOutOfStoreSymlink "${config.xdg.configHome}/nix-darwin/dotfiles/kitty.conf";
+
+    ".config/ghostty/config".source =
+      config.lib.file.mkOutOfStoreSymlink "${config.xdg.configHome}/nix-darwin/dotfiles/ghostty_conf";
 
     ".config/nvim/".source =
       config.lib.file.mkOutOfStoreSymlink "${config.xdg.configHome}/nix-darwin/dotfiles/nvim";
