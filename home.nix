@@ -131,7 +131,6 @@
      mergetool."nvimdiff".cmd = "nvim -d \"$LOCAL\" \"$MERGED\" \"$BASE\" \"$REMOTE\" -c \"wincmd w\" -c \"wincmd J\"";
      diff.tool = "nvimdiff";
      difftool."nvimdiff".cmd = "nvim -d \"$LOCAL\" \"$REMOTE\"";
-     remote.origin.fetch = "+refs/heads/*:refs/remotes/origin/*";
    };
 
    aliases = {
