@@ -25,7 +25,7 @@
     bc
     btop
     cargo
-    # devcontainer
+    devcontainer
     fd
     freerdp3
     fzf
