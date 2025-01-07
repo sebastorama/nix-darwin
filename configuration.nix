@@ -23,6 +23,7 @@
       "android-studio"
       "arc"
       "balenaetcher"
+      "bambu-studio"
       "cursor"
       "devpod"
       "discord"
