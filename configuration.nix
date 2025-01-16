@@ -13,6 +13,7 @@
 
     taps = [
       "d12frosted/emacs-plus"
+      "qmk/qmk"
     ];
 
     casks = [
@@ -22,6 +23,7 @@
       "alfred"
       "android-studio"
       "arc"
+      "arduino-ide"
       "balenaetcher"
       "bambu-studio"
       "cursor"
@@ -39,11 +41,12 @@
       "karabiner-elements"
       "kdenlive"
       "keymapp"
+      "kicad"
       "kitty"
-      "logitech-g-hub"
       "logi-options+"
-      "microsoft-office"
+      "logitech-g-hub"
       "mattermost"
+      "microsoft-office"
       "ngrok"
       "notion"
       "obs"
@@ -53,6 +56,7 @@
       "orion"
       "parallels"
       "qgis"
+      "qmk-toolbox"
       "raycast"
       "steam"
       "steelseries-gg"
@@ -62,12 +66,14 @@
       "todoist"
       "transcribe"
       "visual-studio-code"
+      "vial"
       "whatsapp"
       "wifiman"
       "zed"
     ];
 
     brews = [
+      "qmk/qmk/qmk"
       "emacs-plus"
       "findutils"
       "graphviz"
