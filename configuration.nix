@@ -21,6 +21,7 @@
       "1password-cli"
       "adobe-acrobat-pro"
       "alfred"
+      "android-platform-tools"
       "android-studio"
       "arc"
       "arduino-ide"
