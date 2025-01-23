@@ -71,6 +71,7 @@
       "whatsapp"
       "wifiman"
       "zed"
+      "zen-browser"
     ];
 
     brews = [
