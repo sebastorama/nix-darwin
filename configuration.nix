@@ -35,6 +35,7 @@
       "focusrite-control"
       "ghostty"
       "google-chrome"
+      "google-chrome@canary"
       "google-earth-pro"
       "iina"
       "iterm2"
