@@ -123,7 +123,13 @@
   ];
 
   system.defaults.dock = {
-    autohide = true;
+    autohide = false;
+    tilesize = 36;
+    largesize = 72;
+    magnification = true;
+    showhidden = true;
+    scroll-to-open = true;
+    orientation = "right";
     show-recents = false;
     appswitcher-all-displays = true;
   };
