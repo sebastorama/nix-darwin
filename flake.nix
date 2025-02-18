@@ -33,7 +33,7 @@
             name = "sebastorama";
             home = "/Users/sebastorama";
           };
-         home-manager.useGlobalPkgs = true;
+          home-manager.useGlobalPkgs = true;
           home-manager.users.sebastorama = import ./home.nix;
         }
       ];
