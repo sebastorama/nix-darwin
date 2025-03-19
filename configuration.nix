@@ -12,7 +12,6 @@
     enable = true;
 
     taps = [
-      "d12frosted/emacs-plus"
       "qmk/qmk"
     ];
 
@@ -32,6 +31,7 @@
       "discord"
       "docker"
       "dropbox"
+      "firefox"
       "focusrite-control"
       "ghostty"
       "google-chrome"
@@ -77,7 +77,6 @@
 
     brews = [
       "qmk/qmk/qmk"
-      "emacs-plus"
       "findutils"
       "graphviz"
       "haskell-stack"
