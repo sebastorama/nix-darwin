@@ -123,8 +123,8 @@
 
   system.defaults.dock = {
     autohide = false;
-    tilesize = 40;
-    largesize = 72;
+    tilesize = 44;
+    largesize = 96;
     magnification = true;
     showhidden = true;
     scroll-to-open = true;
