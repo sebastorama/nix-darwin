@@ -69,6 +69,7 @@
       "transcribe"
       "visual-studio-code"
       "vial"
+      "vnc-viewer"
       "whatsapp"
       "wifiman"
       "zed"
