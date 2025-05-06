@@ -62,6 +62,7 @@
       "raycast"
       "steam"
       "steelseries-gg"
+      "spotify"
       "teamviewer"
       "telegram"
       "textual"
@@ -129,7 +130,7 @@
     magnification = true;
     showhidden = true;
     scroll-to-open = true;
-    orientation = "right";
+    orientation = "bottom";
     show-recents = false;
     appswitcher-all-displays = true;
   };
