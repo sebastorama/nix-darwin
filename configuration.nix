@@ -85,24 +85,11 @@
       "sevenzip"
     ];
 
-    masApps = {
-      "1Password for Safari" = 1569813296;
-      "Amazon Kindle" = 302584613;
-      "ColorSlurp" = 1287239339;
-      "Goodnotes 6" = 1444383602;
-      "HazeOver Distraction Dimmer" = 430798174;
-      "LocalSend" = 1661733229;
-      "Logic Pro" = 634148309;
-      "PDF Squeezer 4" = 1502111349;
-      "TextSniper" = 1528890965;
-      "Vimari" = 1480933944;
-    };
-
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;
   };
 
-  nix.enable = true;
+  nix.enable = false; # managed by determinate
   # nix.package = pkgs.nix;
 
   nix.settings.experimental-features = "nix-command flakes";
