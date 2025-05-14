@@ -43,7 +43,12 @@
     postgresql_16
     python3
     ripgrep
-    ruby
+
+    (ruby_3_3.withPackages (rp: with rp; [
+      bundler
+      pry
+    ]))
+
     sesh
     stdenv
     stylua
