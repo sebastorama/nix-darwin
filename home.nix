@@ -87,6 +87,9 @@
     ".config/nvim/".source =
       config.lib.file.mkOutOfStoreSymlink "${config.xdg.configHome}/nix-darwin/dotfiles/nvim";
 
+    ".aider.model.settings.yml".source =
+      config.lib.file.mkOutOfStoreSymlink "${config.xdg.configHome}/nix-darwin/dotfiles/aider.model.settings.yml";
+
     ".npmrc".source = dotfiles/npmrc;
 
     # # You can also set the file content immediately.
