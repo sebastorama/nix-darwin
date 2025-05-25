@@ -92,6 +92,12 @@
 
     ".npmrc".source = dotfiles/npmrc;
 
+    ".gitignore_global".text = ''
+      # Aider files
+      .aider*
+      aider.log
+    '';
+
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
     #   org.gradle.console=verbose
@@ -135,6 +141,7 @@
    extraConfig = {
      init.defaultBranch = "main";
      core.editor = "nvim";
+     core.excludesfile = "~/.gitignore_global";
      merge.tool = "nvimdiff";
      mergetool."nvimdiff".cmd = "nvim -d \"$LOCAL\" \"$MERGED\" \"$BASE\" \"$REMOTE\" -c \"wincmd w\" -c \"wincmd J\"";
      diff.tool = "nvimdiff";
