@@ -96,6 +96,7 @@
       # Aider files
       .aider*
       aider.log
+      .vscode
     '';
 
     # # You can also set the file content immediately.
