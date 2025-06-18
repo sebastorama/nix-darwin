@@ -1,5 +1,5 @@
 {
-  description = "Example Darwin system flake";
+  description = "Multi-platform system flake";
 
   inputs = {
     home-manager.url = "github:nix-community/home-manager";
@@ -15,20 +15,15 @@
 
   outputs = { self, nix-darwin, nixpkgs, home-manager, ... }@inputs:
   let
-    system = "aarch64-darwin";
-
-    pkgs = import nixpkgs {
-      system = system;
+    mkPkgs = system: import nixpkgs {
+      inherit system;
       overlays = [inputs.neovim-nightly-overlay.overlays.default];
       config.allowUnfree = true;
     };
-  in
-  {
-    # Build darwin flake using:
-    # $ darwin-rebuild build --flake .#14m3
-    darwinConfigurations."14m3" = nix-darwin.lib.darwinSystem {
+
+    mkDarwinSystem = hostname: system: nix-darwin.lib.darwinSystem {
       modules = [
-        ./configuration.nix
+        ./darwin.nix
         home-manager.darwinModules.home-manager {
           users.users.sebastorama = {
             name = "sebastorama";
@@ -39,14 +34,37 @@
         }
       ];
       specialArgs = {
-        inherit inputs;
+        inherit inputs hostname;
         system = system;
         self = self;
-        pkgs = pkgs;
+        pkgs = mkPkgs system;
       };
     };
 
-    # Expose the package set, including overlays, for convenience.
+    mkHomeConfiguration = hostname: system: home-manager.lib.homeManagerConfiguration {
+      pkgs = mkPkgs system;
+      modules = [
+        ./home.nix
+      ];
+      extraSpecialArgs = {
+        inherit inputs hostname;
+        system = system;
+      };
+    };
+  in
+  {
+    # Darwin configurations
+    darwinConfigurations = {
+      "14m3" = mkDarwinSystem "14m3" "aarch64-darwin";
+      "16m3" = mkDarwinSystem "16m3" "aarch64-darwin";
+    };
+
+    # Home Manager configurations for Linux
+    homeConfigurations = {
+      "sebastorama@linux" = mkHomeConfiguration "linux" "x86_64-linux";
+    };
+
+    # Expose the package sets for convenience
     darwinPackages = self.darwinConfigurations."14m3".pkgs;
   };
 }

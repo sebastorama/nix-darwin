@@ -1,4 +1,4 @@
-{ pkgs, self, system, ... }: {
+{ pkgs, self, system, hostname, ... }: {
   nixpkgs.config.allowUnfree = true;
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
@@ -151,7 +151,7 @@
     enableKeyMapping = false;
   };
 
-  networking.hostName = "14m3";
+  networking.hostName = hostname;
 
   security.sudo.extraConfig = ''
     sebastorama ALL=(ALL) NOPASSWD: ALL
