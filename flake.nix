@@ -20,6 +20,7 @@
     pkgs = import nixpkgs {
       system = system;
       overlays = [inputs.neovim-nightly-overlay.overlays.default];
+      config.allowUnfree = true;
     };
   in
   {

@@ -24,6 +24,7 @@
     bc
     btop
     cargo
+    claude-code
     devcontainer
     fd
     freerdp3
