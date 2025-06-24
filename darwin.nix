@@ -113,7 +113,7 @@
   ];
 
   system.defaults.dock = {
-    autohide = false;
+    autohide = true;
     tilesize = 44;
     largesize = 96;
     magnification = true;
