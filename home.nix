@@ -34,6 +34,7 @@
     gum
     imagemagick
     jq
+    libxml2
     lsd
     mtr
     neovim
