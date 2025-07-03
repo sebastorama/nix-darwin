@@ -57,6 +57,7 @@
     stylua
     tldr
     tmux
+    tree-sitter
     wget
     yt-dlp
     # # It is sometimes useful to fine-tune packages, for example, by applying
