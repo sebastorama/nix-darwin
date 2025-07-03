@@ -42,6 +42,7 @@
     nodejs_22
     pgformatter
     pipx
+    pnpm
     postgresql_16
     python3
     ripgrep
@@ -97,6 +98,7 @@
     ".gitignore_global".text = ''
       # Aider files
       .aider*
+      .claude*
       aider.log
       .vscode
     '';
