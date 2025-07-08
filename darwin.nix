@@ -71,6 +71,7 @@
       "visual-studio-code"
       "vial"
       "vnc-viewer"
+      "vivaldi"
       "whatsapp"
       "wifiman"
       "zed"
