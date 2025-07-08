@@ -26,6 +26,7 @@
       "arduino-ide"
       "balenaetcher"
       "bambu-studio"
+      "brave-browser"
       "cursor"
       "devpod"
       "discord"
