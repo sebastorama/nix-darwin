@@ -27,6 +27,7 @@
       "balenaetcher"
       "bambu-studio"
       "brave-browser"
+      "claude"
       "cursor"
       "devpod"
       "discord"
