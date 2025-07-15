@@ -50,6 +50,7 @@
       "logi-options+"
       "logitech-g-hub"
       "mattermost"
+      "microsoft-edge"
       "microsoft-office"
       "ngrok"
       "notion"
@@ -77,7 +78,7 @@
       "wasabi-wallet"
       "whatsapp"
       "wifiman"
-      "zed"
+      "zed@preview"
       "zen-browser"
     ];
 

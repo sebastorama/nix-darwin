@@ -34,6 +34,7 @@
     gum
     imagemagick
     jq
+    lazygit
     libxml2
     lsd
     mtr
