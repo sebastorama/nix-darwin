@@ -186,6 +186,7 @@
     disableConfirmationPrompt = true;
     mouse = true;
     newSession = false;
+    aggressiveResize = true;
     keyMode = "vi";
     plugins = with pkgs.tmuxPlugins; [ tokyo-night-tmux ];
     extraConfig = ''
@@ -207,8 +208,9 @@
       bind % split-window -h -c "#{pane_current_path}"
       bind-key C-u run-shell -b "tmux capture-pane -J -p | grep -oE '(https?):\/\/[^ ]*' | fzf-tmux -d20 --multi --bind alt-a:select-all,alt-d:deselect-all | xargs open"
 
-      bind-key -n C-M-l select-pane -R
-      bind-key -n C-M-h select-pane -L
+      bind -r l select-pane -R
+      bind -r h select-pane -L
+      bind -r z resize-pane -Z
       bind-key -n C-M-5 split-window -h
 
       bind-key "t" display-popup -E -w 40% "sesh connect \"$(
@@ -220,13 +222,11 @@
 
       bind-key C-Space select-pane -t .+\; resize-pane -Z
 
-      bind-key 9 resize-pane -L 10
-      bind-key 0 resize-pane -R 10
+      bind-key -r 9 resize-pane -L 10
+      bind-key -r 0 resize-pane -R 10
       bind-key F3 resize-pane -L 50
       bind-key F4 resize-pane -R 50
 
-      bind-key -n C-PageUp previous-window
-      bind-key -n C-PageDown next-window
 
       bind-key -n S-F1 swap-window -t -1\; select-window -t -1
       bind-key -n S-F2 swap-window -t +1\; select-window -t +1
