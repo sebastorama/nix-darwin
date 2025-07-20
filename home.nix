@@ -170,8 +170,18 @@
      lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%ae>%Creset' --abbrev-commit";
    };
 
-   diff-so-fancy = {
+   delta = {
      enable = true;
+     options = {
+       syntax-theme = "Nord";  # Dark theme similar to Tokyo Night
+       line-numbers = true;
+       side-by-side = false;
+       navigate = true;
+       hyperlinks = true;
+       file-style = "bold yellow ul";
+       file-decoration-style = "none";
+       hunk-header-style = "file line-number syntax";
+     };
    };
   };
 
