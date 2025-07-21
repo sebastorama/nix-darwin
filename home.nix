@@ -24,7 +24,6 @@
     bc
     btop
     cargo
-    claude-code
     devcontainer
     fd
     freerdp3
@@ -198,7 +197,7 @@
     newSession = false;
     aggressiveResize = true;
     keyMode = "vi";
-    plugins = with pkgs.tmuxPlugins; [ tokyo-night-tmux ];
+    plugins = with pkgs.tmuxPlugins; [ tokyo-night-tmux vim-tmux-navigator ];
     extraConfig = ''
       set-window-option -g window-status-current-style fg=red
       set-option -g status-position top
@@ -246,6 +245,9 @@
       bind-key -n F3 choose-window
       bind-key ! break-pane -d -n _hidden_pane
       bind-key @ join-pane -s $.1
+
+      bind-key -r C-l send-keys 'C-l'
+      bind-key -r C-k send-keys 'C-k'
 
       set -gu default-command
       set -g default-shell "$SHELL"
