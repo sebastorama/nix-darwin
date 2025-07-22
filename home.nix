@@ -46,7 +46,6 @@
     postgresql_16
     python3
     ripgrep
-
     (ruby_3_3.withPackages (rp: with rp; [
       bundler
       pry
@@ -58,6 +57,7 @@
     tldr
     tmux
     tree-sitter
+    uv
     wget
     yt-dlp
 
@@ -66,11 +66,9 @@
       sed 's/[^0-9]//g'
     '')
 
-    # # It is sometimes useful to fine-tune packages, for example, by applying
-    # # overrides. You can do that directly here, just don't forget the
-    # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
-    # # fonts?
-    # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
+    # Nerd Fonts
+    nerd-fonts.fantasque-sans-mono
+    nerd-fonts.symbols-only
 
     # # You can also create simple shell scripts directly inside your
     # # configuration. For example, this adds a command 'my-hello' to your
