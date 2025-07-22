@@ -39,7 +39,7 @@
     mtr
     neovim
     nil
-    nodejs_22
+    nodejs_24
     pgformatter
     pipx
     pnpm
@@ -51,7 +51,7 @@
       bundler
       pry
     ]))
-
+    sd
     sesh
     stdenv
     stylua
