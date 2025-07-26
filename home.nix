@@ -106,6 +106,7 @@
       .claude*
       aider.log
       .vscode
+      .serena
     '';
 
     # # You can also set the file content immediately.
