@@ -1,0 +1,40 @@
+{
+  "$schema": "https://charm.land/crush.json",
+  "lsp": {
+    "typescript": {
+      "command": "typescript-language-server",
+      "args": ["--stdio"]
+    },
+    "nix": {
+      "command": "nil"
+    }
+  },
+  "mcp": {
+    "serena": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/oraios/serena",
+        "serena-mcp-server",
+        "--context",
+        "ide-assistant",
+        "--project",
+        "/Users/sebastorama/dev/beefmaker-mini"
+      ],
+      "env": {}
+    },
+    "context7": {
+      "type": "http",
+      "command": "/Users/sebastorama/mcp-context7.sh",
+      "args": []
+    },
+    "playwright": {
+      "type": "http",
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    }
+  }
+}

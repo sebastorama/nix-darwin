@@ -23,7 +23,9 @@
     aider-chat
     bc
     btop
+    bun
     cargo
+    crush
     devcontainer
     fd
     freerdp3
@@ -57,6 +59,7 @@
     tldr
     tmux
     tree-sitter
+    typescript-language-server
     uv
     wget
     yt-dlp
@@ -99,6 +102,9 @@
       config.lib.file.mkOutOfStoreSymlink "${config.xdg.configHome}/nix-darwin/dotfiles/aider.model.settings.yml";
 
     ".npmrc".source = dotfiles/npmrc;
+
+    ".config/crush/crush.json".source =
+      config.lib.file.mkOutOfStoreSymlink "${config.xdg.configHome}/nix-darwin/dotfiles/crush.json";
 
     ".gitignore_global".text = ''
       # Aider files
