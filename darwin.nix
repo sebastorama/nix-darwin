@@ -59,6 +59,7 @@
       "obsidian"
       "ollama"
       "orion"
+      "parsec"
       "parallels"
       "qgis"
       "qmk-toolbox"
