@@ -191,7 +191,13 @@
 
   programs.ssh = {
     enable = true;
-    addKeysToAgent = "yes";
+    # Disable deprecated defaults and set ours explicitly
+    enableDefaultConfig = false;
+    matchBlocks = {
+      "*" = {
+        addKeysToAgent = "yes";
+      };
+    };
   };
 
   programs.tmux = {
