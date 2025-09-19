@@ -54,6 +54,7 @@
     ]))
     sd
     sesh
+    sqlite
     stdenv
     stylua
     tldr
