@@ -71,6 +71,7 @@
       "teamviewer"
       "telegram"
       "textual"
+      "the-unarchiver"
       "todoist-app"
       "transcribe"
       "visual-studio-code"
