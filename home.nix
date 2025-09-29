@@ -254,7 +254,7 @@
 
       bind-key -n M--  previous-window
       bind-key -n M-= next-window
-      bind-key -n F3 choose-window
+      bind-key -n F4 resize-pane -Z
       bind-key ! break-pane -d -n _hidden_pane
       bind-key @ join-pane -s $.1
 
